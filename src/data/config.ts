@@ -38,7 +38,6 @@ const config = {
     return this.site + "/assets/seo/og-image.png";
   },
   social: {
-    twitter: "https://x.com/_Abhi_Speaks/",
     linkedin: "https://www.linkedin.com/in/puravsaluja4/",
     instagram: "https://www.instagram.com/puravsaluja13/",
     github: "https://github.com/Purav001/",

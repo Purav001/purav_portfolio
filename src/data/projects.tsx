@@ -34,6 +34,8 @@ import {
   SiApachemaven,
   SiCplusplus,
   SiArduino,
+  SiPytorch,
+  SiNumpy,
 } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import css from "styled-jsx/css";
@@ -292,6 +294,18 @@ const PROJECT_SKILLS = {
     fg: "white",
     icon: <SiArduino/>,
   },
+  pyt: {
+    title: "PyTorch",
+    bg: "black",
+    fg: "white",
+    icon: <SiPytorch />,
+  },
+  np: {
+    title: "NumPy",
+    bg: "black",
+    fg: "white",
+    icon: <SiNumpy />,
+  },
 };
 export type Project = {
   id: string;
@@ -340,7 +354,7 @@ const projects: Project[] = [
     id: "pictovia",
     category: "AI",
     title: "Pictovia: AI-powered image generation platform",
-    src: "/assets/projects-screenshots/pictovia/1.png",
+    src: "/assets/projects-screenshots/pictovia/1.jpeg",
     screenshots: ["/assets/projects-screenshots/pictovia/1.png"],
     skills: {
       frontend: [
@@ -371,8 +385,9 @@ const projects: Project[] = [
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
             images={[
-              `${BASE_PATH}/financeme/1.png`,
-              `${BASE_PATH}/financeme/2.png`,
+              `${BASE_PATH}/pictovia/1.jpeg`,
+              `${BASE_PATH}/pictovia/2.jpeg`,
+              `${BASE_PATH}/pictovia/3.jpeg`,
             ]}
           />
         </div>
@@ -445,34 +460,32 @@ const projects: Project[] = [
       );
     },
   },
-  { // 04. Smart parking assitant
-    id: "smartparkingassitant",
-    category: "IoT",
-    title: "Smart Parking Assistant",
-    src: "/assets/projects-screenshots/smartparkingassitant/01.jpeg",
-    screenshots: ["01.jpeg", "03.png"],
-    live: "https://github.com/Abhiz2411/smart-parking-assistant",
-    github:"https://github.com/Abhiz2411/smart-parking-assistant",
+  {
+    id: "avig",
+    category: "ML",
+    title: "AViG",
+    src: "/assets/projects-screenshots/avig/1.png",
+    screenshots: ["1.png", "3.png"],
+    live: "https://github.com/Purav001/AViG",
+    github:"https://github.com/Purav001/AViG",
     skills: {
-      frontend: [PROJECT_SKILLS.python],
-      backend: [PROJECT_SKILLS.cplusplus, PROJECT_SKILLS.arduino],
+      frontend: [PROJECT_SKILLS.pyt, PROJECT_SKILLS.np],
+      backend: [],
     },
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-            Transform parking with the Smart Parking Assistant, an IoT marvel powered by Arduino 
-            and IR sensors to detect and recommend the best spots in real-time. Enjoy a sleek GUI 
-            that visualizes availability and an intelligent system for quick, optimal decisions. 
-            Built to adapt with customizable hardware and Python-powered software for seamless 
-            integration. Say goodbye to parking woes and hello to smarter space utilization!
+          Our work introduces the Pyramid Vision Graph Network (Pyramid ViG), a novel architecture that represents images as flexible graphs to overcome the limitations of traditional grid-based CNNs and sequence-based Vision Transformers. The core contribution is a novel Spatial Refinement Head, which integrates a lightweight attention mechanism to intelligently focus on the most discriminative features, significantly enhancing performance across diverse visual tasks.
+          This framework is rigorously validated on three distinct and challenging domains, consistently outperforming established baselines.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
             images={[
-              `${BASE_PATH}/smartparkingassitant/01.jpeg`,
-              `${BASE_PATH}/smartparkingassitant/03.png`,
-              `${BASE_PATH}/smartparkingassitant/04.jpg`,
+              `${BASE_PATH}/avig/1.png`,
+              `${BASE_PATH}/avig/2.png`,
+              `${BASE_PATH}/avig/3.png`,
+              `${BASE_PATH}/avig/4.png`,
             ]}
           />
         </div>
@@ -480,73 +493,31 @@ const projects: Project[] = [
     },
   },
   { // 05. Smart Job Tracker project
-    id: "smartjobtracker",
-    category: "Full stack",
-    title: "Smart Job Tracker",
-    src: "/assets/projects-screenshots/smartjobtracker/02.png",
-    screenshots: ["01.png", "02.png", "03.png","04.png","05.png","06.png","07.png"],
-    live: "https://job-tracker-application-eight.vercel.app/",
-    github:"https://github.com/Abhiz2411/Job-tracker-application",
+    id: "sgcl",
+    category: "ML/DL",
+    title: "SGCL: Contrastive Learning for Signed Graph Link Prediction",
+    src: "/assets/projects-screenshots/sgcl/1.png",
+    screenshots: ["1.png", "2.png", "3.png"],
+    live: "https://github.com/Purav001/SGCL",
+    github:"https://github.com/Purav001/SGCL",
     skills: {
-      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.vite],
-      backend: [PROJECT_SKILLS.firebase],
-    },
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono ">
-            Track your job applications effortlessly with a sleek, dark-themed app that lets you 
-            manage, filter, and visualize your job search. Organize your applications with a 
-            Kanban board, monitor progress through status updates, and store everything securely. 
-            Enjoy seamless access across devices with a responsive design and email reminders for 
-            interviews. A smarter, more intuitive way to stay on top of your job hunt!
-          </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
-          <SlideShow
-            images={[
-              `${BASE_PATH}/smartjobtracker/01.png`,
-              `${BASE_PATH}/smartjobtracker/02.png`,
-              `${BASE_PATH}/smartjobtracker/03.png`,
-              `${BASE_PATH}/smartjobtracker/04.png`,
-              `${BASE_PATH}/smartjobtracker/05.png`,
-              `${BASE_PATH}/smartjobtracker/06.png`,
-              `${BASE_PATH}/smartjobtracker/07.png`,
-            ]}
-          />
-        </div>
-      );
-    },
-  },
-  { // 06. Savinder Puri portfolio project
-    id: "savinderpurisportfolio",
-    category: "Web Development",
-    title: "Savinder Puri Portfolio",
-    src: "/assets/projects-screenshots/savinderpuriportfolio/01.png",
-    screenshots: ["01.png", "02.png", "03.png","04.png","05.png"],
-    live: "https://savinder-puri.vercel.app/",
-    github:"https://github.com/Abhiz2411/savinder-puri",
-    skills: {
-      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.vite],
+      frontend: [PROJECT_SKILLS.pyt, PROJECT_SKILLS.np],
       backend: [],
     },
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-            Step into the digital world of Savinder Puri, the beloved DevOps guru and Spiritual 
-            Alchemist, with this responsive portfolio website. 🌐✨ Explore his inspiring journey, 
-            milestones, and life-changing services blending tech and spirituality. Built with 
-            modern tools like React and TypeScript, it’s a heartfelt tribute to a mentor who 
-            transforms lives. 💻🕊️ Crafted with ❤️ by Abhijit Zende! 🚀
+          Signed Graph Learning Framework enables scalable experimentation on large-scale signed network datasets using graph neural networks.
+          Built with PyTorch and DGL, it introduces efficient training pipelines and graph augmentation strategies based on signed random walks and eigenvector centrality to improve robustness and stability.
+          The framework achieves 97.33% Binary F1 and 94.93% Macro F1 on the Bitcoin-OTC benchmark, outperforming GCN and GAT baselines by 12% while reducing training time by 30%.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
             images={[
-              `${BASE_PATH}/savinderpuriportfolio/01.png`,
-              `${BASE_PATH}/savinderpuriportfolio/02.png`,
-              `${BASE_PATH}/savinderpuriportfolio/03.png`,
-              `${BASE_PATH}/savinderpuriportfolio/04.png`,
-              `${BASE_PATH}/savinderpuriportfolio/05.png`,
+              `${BASE_PATH}/sgcl/1.png`,
+              `${BASE_PATH}/sgcl/2.png`,
+              `${BASE_PATH}/sgcl/3.png`,
             ]}
           />
         </div>
