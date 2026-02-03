@@ -400,7 +400,7 @@ const projects: Project[] = [
     title: "My Portfolio",
     src: "/assets/projects-screenshots/myportfolio/landing.png",
     screenshots: ["assets/projects-screenshots/myportfolio/landing.png"],
-    live: "https://www.google.com/",
+    live: "https://purav-portfolio-ten.vercel.app/",
     github:"https://github.com/Purav001/purav_portfolio",
     skills: {
       frontend: [

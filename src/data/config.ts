@@ -32,7 +32,7 @@ const config = {
   ],
   author: "Purav Saluja",
   email: "puravsaluja.dev@gmail.com",
-  site: "https://abhijitzende.com",
+  site: "https://purav-portfolio-ten.vercel.app/",
 
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";
