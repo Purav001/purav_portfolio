@@ -434,7 +434,7 @@ const projects: Project[] = [
           <SlideShow
             images={[
               `${BASE_PATH}/myportfolio/landing.png`,
-              `${BASE_PATH}/portfolio/skills.png`,
+              `${BASE_PATH}/myportfolio/skills.png`,
             ]}
           />
           <TypographyH3 className="my-4 ">Space Theme</TypographyH3>
