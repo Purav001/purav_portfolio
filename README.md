@@ -1,13 +1,13 @@
 ![Portfolio Preview](https://github.com/Purav001/purav_portfolio/blob/main/public/assets/projects-screenshots/myportfolio/landing.png)
 
-# 🚀 My Portfolio Website
+#  My Portfolio Website
 
 Welcome to the repository for my personal portfolio website! 🎉 This project is a culmination of creativity, technology, and my dedication to showcasing my skills, projects, and personality in a visually stunning and interactive manner.
 
 ### Live preview: coming soon 🚀
 
 
-## 🔥 Features
+##  Features
 
 Here are the key highlights of my portfolio:
 
@@ -16,23 +16,23 @@ Here are the key highlights of my portfolio:
 - Each keycap represents a skill and reveals titles and descriptions on hover for an immersive experience.
 - Smooth, responsive 3D interactions that captivate visitors.
 
-### ✨ **Slick Interactions & Animations**
+### **Slick Interactions & Animations**
 - Powered by **GSAP** and **Framer Motion**, delivering buttery-smooth animations on scroll, hover, and element reveals.
 - Creative motion designs that enhance storytelling and keep users engaged.
 
-### 🌌 **Space-Themed Design**
+###  **Space-Themed Design**
 - Particles floating on a dark, cosmic background simulate an outer-space vibe.
 - Adds a unique and futuristic look to the portfolio.
 
-### 📱 **Responsive Design**
+###  **Responsive Design**
 - Fully responsive layout ensures the website looks and functions beautifully on all devices.
 - Optimized for both desktop and mobile experiences.
 
-### 🧠 **Innovative Web Design**
+###  **Innovative Web Design**
 - Combines cutting-edge technology with an intuitive user experience.
 - Creative use of animations and visuals to push the boundaries of modern web design.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 The portfolio website is built using the following tools and technologies:
 
@@ -40,7 +40,7 @@ The portfolio website is built using the following tools and technologies:
 - **Animations:** GSAP, Framer Motion, Spline Runtime
 - **Other Tools:** Resend, Socket.io, Zod
 
-## 🌟 Getting Started
+##  Getting Started
 
 1. Clone this repository:
    ```bash
@@ -76,7 +76,7 @@ The portfolio website is built using the following tools and technologies:
    http://localhost:3000
    ```
 
-## 🚀 Deployment
+##  Deployment
 
 This project is deployed using **Vercel** for its blazing-fast performance and ease of use. You can view the live site [here](link).
 
@@ -94,4 +94,4 @@ Note: Make sure to keep your API key secret and never commit it to your reposito
 
 ---
 
-⭐ If you like this project, don't forget to give it a star!
+ If you like this project, don't forget to give it a star!
